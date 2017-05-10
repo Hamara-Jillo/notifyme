@@ -1,0 +1,91 @@
+{% load compress %}
+{% load staticfiles %}
+
+{% compress js %}
+<script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/bower_components/jquery/dist/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/bootstrap/dist/js/bootstrap.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/bootstrap-material-design/dist/js/material.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/bootstrap-material-design/dist/js/ripples.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/underscore/underscore.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/angular/angular.js' %}"></script>
+{#<script type="text/javascript" src="{% static 'bower_components/bower_components/angular-animate/angular-animate.js' %}"></script>#}
+<script type="text/javascript" src="{% static 'bower_components/bower_components/angularUtils-pagination/dirPagination.js' %}"></script>
+{#<script type="text/javascript" src="{% static 'bower_components/bower_components/angularUtils-pagination/dirPagination.tpl.html' %}"></script>#}
+<script type="text/javascript" src="{% static 'bower_components/bower_components/bootstrap-select/dist/js/bootstrap-select.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/bower_components/bootstrap-select/dist/js/i18n/defaults-eu.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/angular-route/angular-route.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/angular-cookies/angular-cookies.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/ngDialog/js/ngDialog.js' %}"></script>
+
+
+<script type="text/javascript" src="{% static 'javascripts/lib/snackbarjs/snackbar.min.js' %}"></script>
+
+
+<script type="text/javascript" src="{% static 'javascripts/notify.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/notify.config.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/notify.routes.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'javascripts/authentication/authentication.module.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/authentication/services/authentication.service.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/authentication/controllers/register.controller.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/authentication/controllers/login.controller.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'javascripts/profiles/profiles.module.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/profiles/controllers/profile.controller.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/profiles/controllers/profile-settings.controller.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/profiles/services/profile.service.js' %}"></script>
+
+
+<script type="text/javascript" src="{% static 'javascripts/institute/institute.module.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/institute/controllers/institute.controller.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/institute/services/institute.services.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/institute/directives/institute.directive.js' %}"></script>
+
+
+<script type="text/javascript" src="{% static 'javascripts/schools/schools.module.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/schools/controllers/schools.controller.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/schools/controllers/school.controller.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/schools/services/schools.services.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/schools/directives/schools.directives.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/schools/directives/school.directive.js' %}"></script>
+
+
+<script type="text/javascript" src="{% static 'javascripts/departments/departments.module.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/departments/controllers/departments.controller.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/departments/directives/departments.directive.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/departments/directives/department.directive.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/departments/services/departments.services.js' %}"></script>
+
+
+ <script type="text/javascript" src="{% static 'javascripts/programmes/programmes.module.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/programmes/services/programmes.services.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/programmes/controllers/new-programme.controller.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/programmes/controllers/programmes.controller.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/programmes/controllers/programme.controller.js' %}"></script>
+ <script type="text/javascript" src="{% static 'javascripts/programmes/directives/programmes.directive.js' %}"></script>
+ <script type="text/javascript" src="{% static 'javascripts/programmes/directives/programme.directive.js' %}"></script>
+
+
+ <script type="text/javascript" src="{% static 'javascripts/pagination/pagination.module.js' %}"></script>
+ <script type="text/javascript" src="{% static 'javascripts/pagination/services/pagination.services.js' %}"></script>
+
+
+
+
+<script type="text/javascript" src="{% static 'javascripts/utils/utils.module.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/utils/services/snackbar.service.js' %}"></script>
+
+
+<script type="text/javascript" src="{% static 'javascripts/layout/layout.module.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/layout/controllers/index.controller.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/layout/controllers/navbar.controller.js' %}"></script>
+
+
+           <script type="text/javascript">
+               $(document).ready(function() {
+               $('.selectpicker').selectpicker();
+              });
+          </script>
+
+{% endcompress %}

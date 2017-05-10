@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="notify">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notify</title>
+  <base href="/"/>
+
+  {% include 'stylesheets.html' %}
+</head>
+
+<body>
+  {% include 'navbar.html' %}
+
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-4 col-md-offset-4" style="text-align: center"><institute></institute></div>
+      </div>
+      <div class="row">
+          <aside class="sidebar "><schools></schools></aside>
+          <div class="col-md-8"><div class="col-xs-12 ng-view"></div></div>
+      </div>
+      <div class="row">
+
+      </div>
+  </div>
+  {% include 'javascripts.html' %}
+</body>
+</html>
