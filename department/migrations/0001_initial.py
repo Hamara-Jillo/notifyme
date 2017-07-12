@@ -7,19 +7,23 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('images', '0001_initial'),
+        ('school', '0001_initial'),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Institute',
+            name='Department',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('name', models.CharField(unique=True, max_length=128)),
-                ('logo', models.ForeignKey(to='images.UniversityLogo')),
+                ('school', models.ForeignKey(related_name='departments', to='school.School')),
             ],
             options={
                 'ordering': ['name'],
             },
+        ),
+        migrations.AlterUniqueTogether(
+            name='department',
+            unique_together=set([('school', 'name')]),
         ),
     ]
